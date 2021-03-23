@@ -33,9 +33,10 @@ class Hello extends Component {
   // Build and return HTML
   render() {
     return (
-      <div className={this.state.clicked ? 'clicked' : null}
-      onClick={this.handleClick}>
-       Hello {this.props.name} {this.state.counter}</div>
+      <button className={this.state.clicked ? 'clicked' : null} onClick={this.handleClick} >
+        Hello {this.props.name},
+        you clicked {this.state.counter} times
+      </button>
     );
   }
 }

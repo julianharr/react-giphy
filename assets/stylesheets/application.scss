@@ -1,5 +1,8 @@
 body {
   font-family: Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  background: #75b8ad;
 }
 
 #root {
@@ -9,7 +12,28 @@ body {
   justify-content: center;
 }
 
+button {
+  width: 20%;
+  height: 20%;
+  border-radius: 12px;
+  padding: 6px 16px;
+  border: none;
+  background: #75b8ad;
+  box-shadow:  5px 5px 31px #55867e,
+             -5px -5px 31px #95eadc;
+  transition: 0.5s all ease-in-out;
+  border: 0.05rem solid #55867e;
+}
+
+button:active {
+  box-shadow: inset 5px 5px 31px #68a49a,
+            inset -5px -5px 31px #82ccc0;
+}
+
+button:focus {
+  outline: none;
+}
 
 .clicked {
-  color: darkgreen;
+  color: #fff;
 }
