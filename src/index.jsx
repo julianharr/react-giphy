@@ -3,15 +3,6 @@ import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
 
-// const Hello = ({ name }) => {
-//   return (
-//     <div>
-//       Hello,
-//       {name}
-//     </div>
-//   );
-// };
-
 class Hello extends Component {
   constructor(props) {
     super(props);
@@ -33,9 +24,8 @@ class Hello extends Component {
   // Build and return HTML
   render() {
     return (
-      <button className={this.state.clicked ? 'clicked' : null} onClick={this.handleClick} >
-        Hello {this.props.name},
-        you clicked {this.state.counter} times
+      <button className={this.state.clicked ? 'clicked' : null} onClick={this.handleClick}>
+          Hello {this.props.name}, you clicked {this.state.counter} times
       </button>
     );
   }
